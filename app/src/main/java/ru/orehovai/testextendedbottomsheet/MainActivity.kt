@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
             when (it.itemId) {
                 R.id.navigation_home -> {
-                    sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+                    sheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
                     NavigationUI.onNavDestinationSelected(it, navController)
                     return@setOnNavigationItemSelectedListener true
                 }
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.navigation_notifications -> {
-                    sheetBehavior.state = BottomSheetBehavior.STATE_SETTLING
+                    sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
                     NavigationUI.onNavDestinationSelected(it, navController)
                     return@setOnNavigationItemSelectedListener true
                 }
